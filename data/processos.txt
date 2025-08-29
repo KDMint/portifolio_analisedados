@@ -1,0 +1,26 @@
+    PID USER     %CPU %MEM COMMAND
+      1 root      0.0  0.1 /sbin/init
+    870 dija      0.0  0.0 -zsh
+    307 mysql     0.0  0.8 /usr/sbin/mariadbd
+     53 root      0.0  0.1 /usr/lib/systemd/systemd-journald
+    102 root      0.0  0.0 /usr/lib/systemd/systemd-udevd
+    229 root      0.0  0.1 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+    194 root      0.0  0.0 /usr/libexec/wsl-pro-service -vv
+    514 dija      0.0  0.0 -zsh
+    172 systemd+  0.0  0.1 /usr/lib/systemd/systemd-resolved
+    191 root      0.0  0.0 /usr/lib/systemd/systemd-logind
+    173 systemd+  0.0  0.0 /usr/lib/systemd/systemd-timesyncd
+    183 message+  0.0  0.0 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+      7 root      0.0  0.0 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+    498 dija      0.0  0.0 /usr/lib/systemd/systemd --user
+    216 syslog    0.0  0.0 /usr/sbin/rsyslogd -n -iNONE
+    869 root      0.0  0.0 /init
+   1429 polkitd   0.0  0.0 /usr/lib/polkit-1/polkitd --no-debug
+    199 root      0.0  0.0 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+      2 root      0.0  0.0 /init
+    182 root      0.0  0.0 /usr/sbin/cron -f -P
+    215 root      0.0  0.0 /sbin/agetty -o -p -- \u --noclear - linux
+    443 root      0.0  0.0 /bin/login -f
+    499 dija      0.0  0.0 (sd-pam)
+    868 root      0.0  0.0 /init
+   1685 dija      0.0  0.0 ps -eo pid,user,%cpu,%mem,command --sort=-%cpu
